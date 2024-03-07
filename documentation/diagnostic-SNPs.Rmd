@@ -1,0 +1,129 @@
+---
+title: "Drosophila melanogaster - Define diagnostic SNPs for all TEs"
+output: rmarkdown::github_document
+editor_options: 
+  markdown: 
+    wrap: sentence
+    author: Riccardo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(knitr))
+suppressPackageStartupMessages(library(kableExtra))
+suppressPackageStartupMessages(library(ggpubr))
+suppressPackageStartupMessages(library(svglite))
+theme_set(theme_bw())
+```
+
+## File import
+
+Read metadata and copynumber estimates
+```{r}
+(metadata <- read_tsv("/Volumes/Storage/dmel-full-story/metadata.tsv"))
+```
+Which TEs do we need to check for diagnostic SNPs? Only re-invading TEs, thus:
+
+* Blood
+* Tirant
+* I-element
+* Souslik
+* Transib1
+
+Read SNPs info from DeviaTE.
+```{r}
+read_deviate <- function(path, meta){
+  transib <- read_table(path, col_names = c("TE","Sample","pos","ref","A","C","G","T","cov","phys_cov","hq_cov","snp","refsnp","int_del","int_del_freq","trunc_left","trunc_rigth","ins","del","annotation")) %>% select(TE, Sample, pos, A, C, G, T, cov, hq_cov, snp) %>% mutate(Sample = gsub(".fastq.sort.bam","",Sample)) %>% inner_join(meta, by="Sample") %>% select(-study, -study_id, -publication)
+}
+
+blood <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Blood.deviaTE.txt", metadata)
+tirant <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Tirant.deviaTE.txt", metadata)
+Iele <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/I-ele.deviaTE.txt", metadata)
+souslik <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Souslik.deviaTE.txt", metadata)
+transib <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Transib1.deviaTE.txt", metadata)
+```
+
+## Define diagnostic SNPs
+
+```{r}
+find_diagnostic <- function(old_sample, new_sample, deviaTE, output){
+  
+snps_new <- deviaTE %>% filter(snp==TRUE, Sample==new_sample) %>%
+   mutate(max = pmax(A, C, G, T, na.rm = TRUE), new_allele = case_when(max==A ~ "A", max==C ~ "C", max==T ~ "T", max==G ~ "G"), new_maf = max/cov) %>% select(TE, pos, new_allele, new_maf)
+
+snps_old <- deviaTE %>% filter(Sample==old_sample, pos %in% snps_new$pos) %>%
+    mutate(max = pmax(A, C, G, T, na.rm = TRUE), old_allele = case_when(max==A ~ "A", max==C ~ "C", max==T ~ "T", max==G ~ "G"), old_maf = max/cov) %>% select(TE, pos, old_allele, old_maf)
+
+diagnostic_snps <- inner_join(snps_new, snps_old, by=c("TE","pos")) %>% filter(new_allele!=old_allele, old_maf > 0.95)
+
+toplot <- deviaTE %>% 
+  inner_join(diagnostic_snps, by="pos") %>%
+  filter(pos %in% diagnostic_snps$pos) %>%
+  pivot_longer(c(A, C, G, T)) %>%
+  rename(allele_cov = value, base = name) %>%
+  mutate(prop = allele_cov / cov)
+
+unique_pos <- unique(toplot$pos)
+
+# If there are more than 20 unique "pos" values, sample 20 of them randomly for visualization
+if (length(unique_pos) > 20) {
+  set.seed(123)
+  sampled_pos <- sample(unique_pos, 20)
+  toplot <- toplot %>% filter(pos %in% sampled_pos)
+}
+
+plot_snps <- ggplot(toplot, aes(x = reorder(Sample, year), y = prop, fill = base)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ pos, ncol = 1) +
+  labs(x = "year", y = "allele frequency", title = "diagnostic SNPs") +
+  theme(legend.position = "top", axis.text.x = element_blank(), axis.ticks.x = element_blank())
+
+ggsave(output, plot_snps, height = 20)
+
+diagnostic_snps
+}
+```
+
+```{r}
+(blood_diagnostic <- find_diagnostic("SRR23876563", "SRR8494428", blood, "/Volumes/Storage/dmel-full-story/diagnostic_snps/blood.png"))
+(tirant_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", tirant, "/Volumes/Storage/dmel-full-story/diagnostic_snps/tirant.png"))
+(Iele_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", Iele, "/Volumes/Storage/dmel-full-story/diagnostic_snps/Iele.png"))
+(souslik_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", souslik, "/Volumes/Storage/dmel-full-story/diagnostic_snps/souslik.png"))
+(transib_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", transib, "/Volumes/Storage/dmel-full-story/diagnostic_snps/transib.png"))
+```
+
+```{r}
+calculate_oldness <- function(deviaTE, diagnostic){
+  
+  prop <- deviaTE %>% filter(pos %in% diagnostic$pos) %>% pivot_longer(c(A, C, G, T)) %>% rename(allele_cov=value, new_allele=name) %>% mutate(prop = allele_cov/cov) %>% inner_join(diagnostic, by=c("TE", "pos", "new_allele"))
+  
+  (by_sample <- prop %>% group_by(TE, Sample) %>% summarise(new_alleles = mean(prop)) %>% mutate(new_alleles = if_else(is.nan(new_alleles), 0, new_alleles)) %>% ungroup())
+}
+
+blood_oldness <- calculate_oldness(blood, blood_diagnostic)
+tirant_oldness <- calculate_oldness(tirant, tirant_diagnostic)
+Iele_oldness <- calculate_oldness(Iele, Iele_diagnostic)
+souslik_oldness <- calculate_oldness(souslik, souslik_diagnostic)
+transib_oldness <- calculate_oldness(transib, transib_diagnostic)
+
+oldness <- bind_rows(blood_oldness, tirant_oldness, Iele_oldness, souslik_oldness, transib_oldness)
+```
+
+```{r}
+(invaders <- read_csv("/Volumes/Storage/dmel-full-story/analysis/csv/new-TEs-v4.csv", show_col_types = FALSE) %>% filter(Sample!="Sample") %>% type_convert())
+
+(final_dataset <- left_join(invaders, oldness, by=c("Sample","TE")) %>% mutate(reinvasion = ifelse(TE %in% c("DMIFACA","Souslik","Transib1","Tirant","Blood"), TRUE, FALSE), TE=case_when(TE=="DMIFACA"~"I-element", TE=="PPI251" ~ "P-element", TRUE ~ TE)) %>% inner_join(metadata, by="Sample"))
+
+write_tsv(final_dataset, "/Volumes/Storage/dmel-full-story/dataset.tsv")
+```
+
+```{r}
+#(te412_diagnostic <- find_diagnostic("SRR23876563", "SRR8494428", te412, "/Volumes/Storage/dmel-full-story/diagnostic_snps/412.png"))
+#(opus_diagnostic <- find_diagnostic("SRR23876563", "SRR8494428", opus, "/Volumes/Storage/dmel-full-story/diagnostic_snps/opus.png"))
+
+
+```

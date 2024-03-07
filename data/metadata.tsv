@@ -1,0 +1,586 @@
+Sample	strain	publication	study	study_id	year	location	lat	lon
+SRR23876563	H10	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1815	Lund, Sweden	55	13
+SRR23876564	H4	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1815	Lund, Sweden	55	13
+SRR23876566	H6	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1815	Smaland, Sweden	60	15
+SRR23876582	H13	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1815	Lund, Sweden	55	13
+SRR23876583	H12	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1815	Lund, Sweden	55	13
+SRR23876584	H11	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1815	Lund, Sweden	55	13
+SRR23876562	H9	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1850	Passau, Germany	49	13
+SRR23876569	H25	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1850	Passau, Germany	49	13
+SRR23876565	H5	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1875	Zealand, Denmark	55	12
+ERR6474638	Oregon-R	https://doi.org/10.1093/gbe/evab239	PRJNA308584	Burny2021	1925			
+SRR23876567	H7	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876568	H8	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876570	H24	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876571	H23	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876572	H22	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876573	H21	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876574	H3	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876575	H20	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876576	H19	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876577	H18	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876578	H17	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876579	H16	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876580	H15	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876581	H14	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876585	H2	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR23876586	H1	https://doi.org/10.1371/journal.pbio.3002333	PRJNA945389	Shpak2023	1933	Lund, Sweden	55	13
+SRR11846555	Crimea	https://doi.org/10.1093/molbev/msaa308	PRJNA634847	Schwarz2020	1936	Crimea, Ukraine	54	34
+SRR11846565	Hikone-R	https://doi.org/10.1093/molbev/msaa308	PRJNA634847	Schwarz2020	1958	Japan	35	138
+SRR457698	A2(BOG1)	https://doi.org/10.1016/j.tig.2014.07.009	PRJNA156883	Long2014	1962	Bogota, Colombia	5	-74
+SRR457701	B4(RVC3)	https://doi.org/10.1016/j.tig.2014.07.009	PRJNA156883	Long2014	1963	California, USA	36	-119
+SRR457707	A4(KSA2)	https://doi.org/10.1016/j.tig.2014.07.009	PRJNA156883	Long2014	1963	South Africa	-30	24
+SRR457669	A5(VAG1)	https://doi.org/10.1016/j.tig.2014.07.009	PRJNA156883	Long2014	1965	Athens, Greece	38	24
+SRR457697	A6(wild5B)	https://doi.org/10.1016/j.tig.2014.07.009	PRJNA156883	Long2014	1966	Georgia, USA	32	-83
+SRR11846560	Harwich	https://doi.org/10.1093/molbev/msaa308	PRJNA634847	Schwarz2020	1967	Harwich, MA, USA	52	1
+SRR13257684	RI75-1	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14293140	RI75-10	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14293191	RI75-2	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14293233	RI75-4	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14293574	RI75-5	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14293576	RI75-6	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14294393	RI75-7	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14294796	RI75-11	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14294899	RI75-12	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR14294940	RI75-13	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1975	Providence, USA	42	-71
+SRR11460801	Pi2	https://doi.org/10.1093/molbev/msaa308	PRJNA634847	Schwarz2020	1975			
+SRR14294944	RI77-50	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14296430	RI7751	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14296646	RI77-52	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14296993	RI77-53	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14297433	RI77-61	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14297455	RI77-55	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14297771	RI77-58	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14297795	RI77-56	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14298064	RI77-54	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14298094	RI77-60	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1977	Providence, USA	42	-71
+SRR14297434	RI78-12	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14297441	RI78-1A	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14297770	RI78-6	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14297794	RI78-13	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14297796	RI78-11	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14297813	RI78-8	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14297954	RI78-14	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14298002	RI78-5	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14298028	RI78-1B	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14298055	RI78-7	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14298091	RI78-9	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1978	Providence, USA	42	-71
+SRR14297456	RI79-7	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14298093	RI79-3	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14298105	RI79-1	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306822	RI79-20	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306823	RI79-10	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306824	RI79-9	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306825	RI79-19	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306826	RI79-17	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306827	RI79-16	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306828	RI79-15	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306829	RI79-14	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306830	RI79-13	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306831	RI79-12	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306842	RI79-11	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1979	Providence, USA	42	-71
+SRR14306821	RI80-2	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306841	RI80-15	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306843	RI80-13	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306844	RI80-11	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306845	RI80-9	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306846	RI80-8	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306847	RI80-7	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306848	RI80-6	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306849	RI80-5	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306850	RI80-4	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1980	Providence, USA	42	-71
+SRR14306832	RI83-9	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306833	RI83-8	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306834	RI83-7	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306835	RI83-6	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306836	RI83-5	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306837	RI83-4	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306838	RI83-3	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306839	RI83-2	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR14306840	RI83-1	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Lange2021	1983	Providence, USA	42	-71
+SRR189408	ZS11_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	1990	Zimbabwe	-18	28
+SRR189409	ZS37_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	1990	Zimbabwe	-18	28
+SRR900425	ZS5_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	1990	Zimbabwe	-18	28
+SRR189411	ZS56_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	1990	Zimbabwe	-18	28
+SRR1663598	ZH23	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663599	ZH26	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663600	ZH33	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663601	ZH42	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663602	ZS10	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663603	ZW09	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663604	ZW139	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663605	ZW140	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663606	ZW142	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663607	ZW144	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663608	ZW155	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663609	ZW177	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663610	ZW184	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1663611	ZW185	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR1769729	ZW155	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1993	Zimbabwe	-19	29
+SRR189420	ZK131_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	1994	Zimbabwe	-17	29
+SRR189421	ZK186_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	1994	Zimbabwe	-17	29
+SRR189422	ZK84_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	1994	Zimbabwe	-17	29
+SRR1662283	B04	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663528	B05	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663529	B10	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663530	B11	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663531	B12	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663532	B14	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663533	B23	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663534	B28	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663535	B38	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663536	B42	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663537	B43	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663538	B51	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663539	B52	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663540	B54	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR1663541	B59	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	1995	Beijing, China	40	116
+SRR189100	GA125_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR189101	GA129_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR189102	GA130_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR189104	GA132_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR189105	GA141_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR189106	GA145_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR189107	GA160_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR218317	GA185_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR097730	GA187_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR189109	GA191_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2002	Gabon	-2	14
+SRR1663561	N01	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663562	N02	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663563	N03	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663564	N04	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663565	N07	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663566	N10	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663567	N11	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663568	N13	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663569	N14	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663570	N15	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663571	N16	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663572	N17	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663573	N18	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663574	N19	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663575	N22	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663576	N23	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663577	N25	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663578	N29	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663579	N30	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Netherlands	52	5
+SRR1663580	T01	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663581	T04	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663582	T05	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663583	T07	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663584	T09	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663585	T10 female	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663586	T14A	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663587	T22A	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663588	T23	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663589	T24	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663590	T25A	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663591	T29A	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663592	T30	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663593	T35	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663594	T36B	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663595	T39	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663596	T43A	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1663597	T45B	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2003	Tasmania, Australia	-43	147
+SRR1525697	NC_ra_03_n	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2003	USA	36	-79
+SRR1663542	I01	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663543	I02	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663544	I03	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663545	I04	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663546	I06	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663547	I07	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663548	I13	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663549	I16	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663550	I17	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663551	I22	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663552	I23	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663553	I24	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663554	I26	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663555	I29	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663556	I31	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663557	I33	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663558	I34	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663559	I35	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR1663560	I38	https://doi.org/10.1534/g3.114.015883 	PRJNA268111	Grenier2015	2004	Ithaca, USA	42	-76
+SRR189041	CO1_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR098916	CO10b-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189044	CO10N_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189045	CO13N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189046	CO14_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189047	CO15N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189048	CO16_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR105048	CO16-3_2	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189049	CO2_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189050	CO4N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR098915	CO8b-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189053	CO8N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR306633	CO9N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Cameroon	6	10
+SRR189263	NG10N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Nigeria	12	13
+SRR189264	NG1N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Nigeria	12	13
+SRR189414	NG3N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Nigeria	12	13
+SRR189266	NG6N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Nigeria	12	13
+SRR189267	NG7_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Nigeria	12	13
+SRR189268	NG9_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2004	Nigeria	12	13
+SRR189114	GU10_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Guinea	11	12
+SRR189115	GU11-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Guinea	11	12
+SRR189117	GU2_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Guinea	11	12
+SRR189118	GU3-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Guinea	11	12
+SRR189120	GU6_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Guinea	11	12
+SRR189121	GU7_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Guinea	11	12
+SRR189122	GU9_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Guinea	11	12
+SRR098323	UG17-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Uganda	1	33
+SRR189412	UG19_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Uganda	1	33
+SRR189265	UG28N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Uganda	1	33
+SRR098324	UG40-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Uganda	1	33
+SRR189415	UG5N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Uganda	1	33
+SRR189416	UG7_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2005	Uganda	1	33
+SRR1525695	GA_ha_08_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2008	USA	31	-83
+SRR189056	ED10N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189057	ED19-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189058	ED2_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189059	ED3_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189073	ED55-2_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189075	ED56-2_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189076	ED5N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189077	ED6N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	7	39
+SRR189078	EZ2_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	8	39
+SRR189082	EZ25_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	8	39
+SRR189083	EZ5N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	8	39
+SRR189084	EZ63-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Ethiopia	8	39
+SRR189269	RC1_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	28
+SRR189270	RC5_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	28
+SRR189374	RG10_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189375	RG11N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR306634	RG13N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189377	RG15_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189392	RG15_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR306619	RG18N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189380	RG19_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189381	RG2_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189382	RG21N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189383	RG22_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189385	RG25_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189386	RG28_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189387	RG3_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189388	RG32N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189389	RG33_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189390	RG34_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189391	RG35_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189378	RG35_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189393	RG36_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR306622	RG37N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189395	RG38N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR306630	RG39_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR306629	RG4N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189398	RG5_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR306624	RG6N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189400	RG7_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR306621	RG8_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR189407	RG9_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2008	Rwanda	-2	29
+SRR1525698	ME_bo_09_fall.r1	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2009	USA	44	-70
+SRR1525699	ME_bo_09_fall.r2	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2009	USA	44	-70
+SRR1525768	PA_li_09_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2009	USA	40	-75
+SRR189242	KN133N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189239	KN20N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189243	KN34_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189245	KN35_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189246	KN6_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189248	KN73-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189249	KO10-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189250	KO10-1-3_2	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189251	KO2-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189252	KO6-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189254	KR39_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189255	KR42_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189256	KR4N_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189257	KR54-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189259	KR68-1-3_1	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189260	KR7_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	0	36
+SRR189261	KT1_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	-1	37
+SRR189262	KT6_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Kenya	-1	37
+SRR189272	TZ10_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Tanzania	-9	33
+SRR189273	TZ14_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Tanzania	-9	33
+SRR189274	TZ8_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2009	Tanzania	-9	33
+SRR1525694	FL_ho_10_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2010	USA	26	-80
+SRR1525696	SC_eu_10_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2010	USA	33	-80
+SRR1525770	PA_li_10_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2010	USA	40	-75
+SRR189038	CK1_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Congo	1	25
+SRR189040	CK2_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Congo	1	25
+SRR189088	FR14_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189089	FR151_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189090	FR180_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189091	FR207_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189092	FR217_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189093	FR229_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189094	FR310_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189095	FR361_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR189096	FR70_2-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	France	46	5
+SRR306623	SP173_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	South Africa	-24	31
+SRR306632	SP188_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	South Africa	-24	31
+SRR189277	SP221_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	South Africa	-24	31
+SRR306631	SP235_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	South Africa	-24	31
+SRR189279	SP241_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	South Africa	-24	31
+SRR306614	SP254_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	South Africa	-24	31
+SRR189281	SP80_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	South Africa	-24	31
+SRR306611	UM118_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Uganda	2	31
+SRR306609	UM37_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Uganda	2	31
+SRR306612	UM526_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Uganda	2	31
+SRR189424	ZI261_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Zambia	-17	29
+SRR189425	ZI268_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Zambia	-17	29
+SRR189426	ZI468_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Zambia	-17	29
+SRR189423	ZI91_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Zambia	-17	29
+SRR306616	ZL130_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Zambia	-18	26
+SRR306618	ZO12_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Zambia	-12	26
+SRR189283	ZO65_1-HE	https://doi.org/10.1371/journal.pgen.1003080	PRJNA30085	Pool2012	2010	Zambia	-12	26
+SRR1525773	PA_li_11_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2011	USA	40	-75
+SRR3590548	ES_ba_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	Spain	41	2
+SRR3590549	ES_ba_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	Spain	41	2
+SRR3590550	VA_ch_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	38	-78
+SRR3590551	VA_ch_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	38	-78
+SRR3590552	AT_gr_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	Austria	48	16
+SRR3590553	AT_gr_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	Austria	48	16
+SRR3590554	WI_cp_12_frost	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	43	-90
+SRR3590555	WI_cp_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	43	-90
+SRR3590556	MA_la_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	42	-72
+SRR3590557	MA_la_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	42	-72
+SRR3590558	NY_it_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	42	-77
+SRR3590559	NY_it_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	42	-77
+SRR3590560	PA_li_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	40	-75
+SRR3590561	PA_li_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	40	-75
+SRR3590562	WI_cp_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	43	-90
+SRR3590563	PA_li_12_sum	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	40	-75
+SRR3939042	CA_es_12_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	39	-122
+SRR3939043	CA_es_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	39	-122
+SRR3939054	CA_pl_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	39	-121
+SRR3939081	CA_st_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	38	-121
+SRR3939093	CA_tu_12_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	38	-120
+SRR3939100	CA_st_12_frost	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	38	-121
+SRR3939101	CA_tu_12_frost	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	38	-120
+SRR3939102	CA_pl_12_frost	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	39	-121
+SRR3939103	CA_es_12_frost	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2012	USA	39	-122
+SRR3939044	CA_tu_13_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	38	-120
+SRR3939045	CA_pl_13_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	39	-121
+SRR3939046	CA_tu_13_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	38	-120
+SRR3939047	CA_st_13_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	38	-121
+SRR3939048	CA_es_13_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	39	-122
+SRR3939049	CA_tu_13_frost	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	38	-120
+SRR3939050	CA_pl_13_frost	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	39	-121
+SRR3939051	WI_cp_13_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	43	-90
+SRR3939052	WI_cp_13_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	43	-90
+SRR3939053	UA_od_13_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	Ukraine	46	31
+SRR3939055	UA_od_13_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	Ukraine	46	31
+SRR3939095	PA_li_13_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	40	-75
+SRR3939104	CA_es_13_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2013	USA	39	-122
+SRR14308759	spring4	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308760	spring3	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308761	spring2	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308762	spring1	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308763	fall6	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308764	fall5	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308765	fall4	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308766	fall3	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308767	spring12	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308768	spring11	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308769	spring10	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308770	spring9	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308771	spring8	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308772	spring7	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308773	spring6	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308774	spring5	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308775	fall2	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR14308776	fall1	https://doi.org/10.1093/molbev/msab368	PRJNA685394	Kapun2021	2014	Providence, USA	42	-71
+SRR3939056	GA_at_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	34	-83
+SRR3939057	GA_at_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	34	-83
+SRR3939058	MI_bh_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	42	-86
+SRR3939059	MI_bh_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	42	-86
+SRR3939076	VA_ch_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	38	-78
+SRR3939077	VA_ch_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	38	-78
+SRR3939078	WI_cp_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	43	-90
+SRR3939080	MA_la_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	42	-72
+SRR3939082	MA_la_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	42	-72
+SRR3939083	PA_st_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	41	-78
+SRR3939084	PA_st_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	41	-78
+SRR3939085	KA_to_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	39	-96
+SRR3939086	KA_to_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	39	-96
+SRR3939096	PA_li_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	40	-75
+SRR3939097	PA_li_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	40	-75
+SRR5647729	FR_Vil_14_07	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	France	49	2
+SRR5647730	UA_Kha_14_46	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	50	36
+SRR5647731	UA_Che_14_47	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	51	30
+SRR5647732	UA_Dro_14_27	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	49	24
+SRR5647733	UA_Che_14_28	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	51	30
+SRR5647734	UA_Che_14_29	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	51	30
+SRR5647735	SE_Lun_14_30	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Sweden	56	13
+SRR5647736	UA_Kyi_14_23	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	50	30
+SRR5647737	UA_Kyi_14_24	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	50	30
+SRR5647738	UA_Var_14_25	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	50	33
+SRR5647739	UA_Pyr_14_26	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	50	33
+SRR5647740	UA_Uma_14_50	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	49	30
+SRR5647741	RU_Val_14_51	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Russia	58	33
+SRR5647742	UA_Che_14_48	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	51	29
+SRR5647743	UA_Kyi_14_49	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	50	30
+SRR5647744	DE_Mun_14_31	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Germany	48	12
+SRR5647745	DE_Mun_14_32	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Germany	48	12
+SRR5647746	AT_See_14_44	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Austria	47	14
+SRR5647747	UA_Kha_14_45	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	50	36
+SRR5647748	TR_Yes_14_04	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Turkey	40	32
+SRR5647749	TR_Yes_14_03	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Turkey	40	32
+SRR5647750	AT_Mau_14_02	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Austria	48	16
+SRR5647751	AT_Mau_14_01	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Austria	48	16
+SRR5647752	UK_She_14_09	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	United Kingdom	53	-2
+SRR5647753	FR_Got_14_08	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	France	45	5
+SRR5647754	CH_Cha_14_42	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Switzerland	47	7
+SRR5647755	FR_Vil_14_05	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	France	49	2
+SRR5647756	CY_Nic_14_11	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Cyprus	35	33
+SRR5647757	UK_Sou_14_10	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	United Kingdom	56	-3
+SRR5647758	CH_Cha_14_43	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Switzerland	47	7
+SRR5647759	UK_Lut_14_13	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	United Kingdom	52	-1
+SRR5647760	UK_Mar_14_12	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	United Kingdom	52	-1
+SRR5647761	DE_Bro_14_15	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Germany	48	8
+SRR5647762	DE_Bro_14_14	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Germany	48	8
+SRR5647763	UA_Yal_14_18	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	45	34
+SRR5647764	UA_Yal_14_16	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	45	34
+SRR5647765	UA_Ode_14_20	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	46	31
+SRR5647766	UA_Ode_14_19	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	46	31
+SRR5647767	UA_Ode_14_22	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	46	31
+SRR5647768	UA_Ode_14_21	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Ukraine	46	31
+SRR5647769	ES_Gim_14_34	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Spain	42	1
+SRR5647770	PT_Rec_14_33	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2014	Portugal	41	-8
+SRR5647771	DK_Kar_14_41	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Denmark	56	10
+SRR5647772	DK_Kar_14_39	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Denmark	56	10
+SRR5647773	FI_Ves_14_38	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Finland	63	26
+SRR5647774	FI_Aka_14_37	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Finland	61	24
+SRR5647775	FI_Aka_14_36	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Finland	61	24
+SRR5647776	ES_Gim_14_35	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	Spain	42	1
+SRR8061818	WA_se_14_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	47	-122
+SRR8061819	WI_cp_14_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2014	USA	43	-90
+SRR3939087	VA_ch_15_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	USA	38	-78
+SRR3939088	VA_ch_15_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	USA	38	-78
+SRR3939089	PA_st_15_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	USA	41	-78
+SRR3939091	ON_su_15_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Canada	47	-81
+SRR3939092	ON_su_15_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Canada	47	-81
+SRR3939094	IL_ur_15_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	USA	40	-88
+SRR3939098	PA_li_15_fall	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	USA	40	-75
+SRR3939099	PA_li_15_spring	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	USA	40	-75
+SRR8439107	TR_Yes_15_8	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Turkey	40	32
+SRR8439108	TR_Yes_15_7	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Turkey	40	32
+SRR8439109	TR_Yes_15_6	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Turkey	40	32
+SRR8439110	TR_Yes_15_5	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Turkey	40	32
+SRR8439111	TR_Yes_15_4	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Turkey	40	32
+SRR8439112	GS_Sai_15_2	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Guadeloupe	16	-61
+SRR8439113	TR_Yes_15_3	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Turkey	40	32
+SRR8439114	GS_Des_15_1	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Guadeloupe	16	-62
+SRR8439115	UA_Cho_15_70	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439116	UA_Dro_15_10	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	49	24
+SRR8439117	UA_Uma_15_9	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	49	30
+SRR8439118	IT_Mez_15_43	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Italy	46	11
+SRR8439119	IT_Mez_15_44	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Italy	46	11
+SRR8439120	FR_Vil_15_41	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	France	49	2
+SRR8439121	UK_Mar_15_42	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	United Kingdom	52	-1
+SRR8439122	FR_Got_15_47	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	France	45	5
+SRR8439123	FR_Got_15_48	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	France	45	5
+SRR8439124	DE_Mun_15_46	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Germany	48	12
+SRR8439125	DE_Mun_15_45	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Germany	48	12
+SRR8439126	FR_Got_15_49	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	France	45	5
+SRR8439127	AT_Mau_15_50	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Austria	48	16
+SRR8439128	UA_Cho_15_67	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439129	UA_Pyr_15_21	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	50	33
+SRR8439130	UA_Ode_15_22	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	46	31
+SRR8439131	UA_Yal_15_23	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	45	34
+SRR8439132	UA_Cho_15_24	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439133	UA_Cho_15_25	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439134	UA_Cho_15_26	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439135	UA_Cho_15_27	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439136	ES_Tom_15_28	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Spain	39	-3
+SRR8439137	ES_Tom_15_29	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Spain	39	-3
+SRR8439138	ES_Gim_15_30	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Spain	42	0
+SRR8439139	UA_Cho_15_69	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439140	UA_Ode_15_66	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	46	31
+SRR8439141	RU_Ale_15_55	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Russia	56	39
+SRR8439142	UK_Dai_15_52	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	United Kingdom	56	-3
+SRR8439143	AT_Mau_15_51	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Austria	48	16
+SRR8439144	DE_Bro_15_54	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Germany	48	8
+SRR8439145	UA_Ode_15_20	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	46	31
+SRR8439146	UA_Kha_15_19	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	50	36
+SRR8439147	UA_Kyi_15_64	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	50	30
+SRR8439148	DE_Bro_15_53	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Germany	48	8
+SRR8439149	UA_Cho_15_65	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	30
+SRR8439150	PT_Rec_15_16	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Portugal	41	-8
+SRR8439151	SE_Lun_15_15	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Sweden	56	13
+SRR8439152	UA_Var_15_18	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	50	33
+SRR8439153	UK_She_15_17	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	United Kingdom	53	-2
+SRR8439154	PO_Brz_15_12	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Poland	54	20
+SRR8439155	UA_Ode_15_11	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	46	31
+SRR8439156	SE_Lun_15_14	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Sweden	56	13
+SRR8439157	BY_Bre_15_13	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Belarus	52	24
+SRR8439158	RU_val_15_38	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Russia	58	33
+SRR8439159	RU_tul_15_37	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Russia	54	38
+SRR8439160	RU_val_15_36	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Russia	58	33
+SRR8439161	FI_Aka_15_35	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Finland	61	24
+SRR8439162	FI_Aka_15_34	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Finland	61	24
+SRR8439163	ES_Cor_15_33	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Spain	38	-3
+SRR8439164	ES_Gua_15_32	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Spain	37	-3
+SRR8439165	FR_Vil_15_40	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	France	49	2
+SRR8439166	CH_Cha_15_39	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Switzerland	47	7
+SRR8439167	UA_Yal_15_63	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	45	34
+SRR8439168	ES_Gim_15_31	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2015	Spain	42	0
+SRR8439169	UA_Cho_15_68	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2015	Ukraine	51	29
+SRR9951090	ES_Ten_15_15	https://doi.org/10.1038/s41467-022-29518-8	PRJNA559813	Kapun2021	2015	Tenerife, Spain	28	-16
+SRR8494422	UA_Uma_16_51	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	49	30
+SRR8494423	TR_Yes_16_52	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Turkey	40	32
+SRR8494424	UA_Pyr_16_49	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	51	33
+SRR8494425	UA_Uma_16_50	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	49	30
+SRR8494426	UA_Pir_16_48	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	51	30
+SRR8494427	UA_Ode_16_47	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	46	31
+SRR8494428	UA_Kyi_16_45	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	50	30
+SRR8494429	UA_Ode_16_46	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	46	31
+SRR8494430	UA_Kyi_16_59	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	50	30
+SRR8494431	UA_Cho_16_54	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	51	30
+SRR8494432	UK_Mar_16_53	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	United Kingdom	52	-1
+SRR8494433	UA_Cho_16_62	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	51	30
+SRR8494434	DE_Bro_16_10	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Germany	48	8
+SRR8494435	FR_Vil_16_9	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	France	49	2
+SRR8494436	UA_Yal_16_61	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	45	34
+SRR8494437	DK_Kar_16_4	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Denmark	56	10
+SRR8494438	DK_Kar_16_3	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Denmark	56	10
+SRR8494439	AT_See_16_1	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Austria	47	14
+SRR8494440	DK_Kar_16_2	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Denmark	56	10
+SRR8494441	UA_Dro_16_56	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	49	24
+SRR8494442	FI_Ves_16_7	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Finland	63	26
+SRR8494443	FI_Aka_16_6	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Finland	61	24
+SRR8494444	UA_Cho_16_55	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	51	30
+SRR8494445	FI_Aka_16_5	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Finland	61	24
+SRR8494446	UA_Kha_16_58	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	50	36
+SRR8494447	FR_Got_16_8	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	France	45	5
+SRR8494448	UA_Kan_16_57	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	50	32
+SRR8494449	RU_Val_16_19	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Russia	58	33
+SRR8494450	RU_Val_16_20	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Russia	58	33
+SRR8494451	DE_Mun_16_12	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Germany	48	12
+SRR8494452	DE_Bro_16_11	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Germany	48	8
+SRR8494453	HU_Sze_16_14	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Hungary	46	20
+SRR8494454	DE_Mun_16_13	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Germany	48	12
+SRR8494455	PO_Gda_16_16	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Poland	54	19
+SRR8494456	IT_Tre_16_15	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Italy	46	11
+SRR8494457	PT_Rec_16_18	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Portugal	41	-8
+SRR8494458	PO_Brz_16_17	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Poland	54	20
+SRR8494459	CH_Cha_16_38	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Switzerland	47	7
+SRR8494460	ES_Tom_16_37	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Spain	39	-3
+SRR8494461	ES_Tom_16_36	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Spain	39	-3
+SRR8494462	ES_Pur_16_35	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Spain	37	-3
+SRR8494463	TR_Yes_16_42	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Turkey	40	32
+SRR8494464	TR_Yes_16_41	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Turkey	40	32
+SRR8494465	TR_Yes_16_40	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Turkey	40	32
+SRR8494466	UA_Kyi_16_44	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	50	30
+SRR8494467	TR_Yes_16_39	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Turkey	40	32
+SRR8494468	TR_Yes_16_43	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Turkey	40	32
+SRR8494469	UA_Var_16_60	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Ukraine	50	33
+SRR8494470	ES_Gim_16_33	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Spain	42	0
+SRR8494471	RS_Kal_16_29	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Serbia	43	22
+SRR8494472	ES_Gim_16_34	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Spain	42	0
+SRR8494473	RS_Sla_16_30	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Serbia	45	20
+SRR8494474	RS_Sla_16_31	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Serbia	45	20
+SRR8494475	ES_Ben_16_32	https://doi.org/10.1093/molbev/msab259	PRJNA308584	Kapun2021	2016	Spain	37	-3
+SRR8494476	RU_Ale_16_22	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Russia	56	39
+SRR8494477	RU_Val_16_21	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Russia	58	33
+SRR8494478	UK_Dai_16_23	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	United Kingdom	56	-3
+SRR8494479	RS_Kal_16_28	https://doi.org/10.1093/molbev/msab259	PRJNA388788	Kapun2021	2016	Serbia	43	22
