@@ -45,6 +45,12 @@ tirant <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE
 Iele <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/I-ele.deviaTE.txt", metadata)
 souslik <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Souslik.deviaTE.txt", metadata)
 transib <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Transib1.deviaTE.txt", metadata)
+
+te412 <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/412.deviaTE.txt", metadata)
+micropia <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Micropia.deviaTE.txt", metadata)
+spoink <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Spoink.deviaTE.txt", metadata)
+opus <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Opus.deviaTE.txt", metadata)
+hobo <- read_deviate("/Volumes/Storage/dmel-full-story/diagnostic_snps/deviaTE_SNPs/Hobo.deviaTE.txt", metadata)
 ```
 
 ## Define diagnostic SNPs
@@ -94,6 +100,13 @@ diagnostic_snps
 (Iele_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", Iele, "/Volumes/Storage/dmel-full-story/diagnostic_snps/Iele.png"))
 (souslik_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", souslik, "/Volumes/Storage/dmel-full-story/diagnostic_snps/souslik.png"))
 (transib_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", transib, "/Volumes/Storage/dmel-full-story/diagnostic_snps/transib.png"))
+
+
+(te412_diagnostic <- find_diagnostic("SRR23876563", "SRR8494428", te412, "/Volumes/Storage/dmel-full-story/diagnostic_snps/412.png"))
+#(opus_diagnostic <- find_diagnostic("SRR23876563", "SRR8494428", opus, "/Volumes/Storage/dmel-full-story/diagnostic_snps/opus.png"))
+(micropia_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", micropia, "/Volumes/Storage/dmel-full-story/diagnostic_snps/micropia.png"))
+(spoink_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", spoink, "/Volumes/Storage/dmel-full-story/diagnostic_snps/spoink.png"))
+(hobo_diagnostic <- find_diagnostic("ERR6474638", "SRR8494428", hobo, "/Volumes/Storage/dmel-full-story/diagnostic_snps/hobo.png"))
 ```
 
 ```{r}
@@ -110,20 +123,18 @@ Iele_oldness <- calculate_oldness(Iele, Iele_diagnostic)
 souslik_oldness <- calculate_oldness(souslik, souslik_diagnostic)
 transib_oldness <- calculate_oldness(transib, transib_diagnostic)
 
-oldness <- bind_rows(blood_oldness, tirant_oldness, Iele_oldness, souslik_oldness, transib_oldness)
+te412_oldness <- calculate_oldness(te412, te412_diagnostic) %>% mutate(TE = as.character(TE))
+spoink_oldness <- calculate_oldness(spoink, spoink_diagnostic)
+micropia_oldness <- calculate_oldness(micropia, micropia_diagnostic)
+hobo_oldness <- calculate_oldness(hobo, hobo_diagnostic)
+
+oldness <- bind_rows(blood_oldness, tirant_oldness, Iele_oldness, souslik_oldness, transib_oldness, te412_oldness, spoink_oldness, micropia_oldness, hobo_oldness)
 ```
 
 ```{r}
 (invaders <- read_csv("/Volumes/Storage/dmel-full-story/analysis/csv/new-TEs-v4.csv", show_col_types = FALSE) %>% filter(Sample!="Sample") %>% type_convert())
 
-(final_dataset <- left_join(invaders, oldness, by=c("Sample","TE")) %>% mutate(reinvasion = ifelse(TE %in% c("DMIFACA","Souslik","Transib1","Tirant","Blood"), TRUE, FALSE), TE=case_when(TE=="DMIFACA"~"I-element", TE=="PPI251" ~ "P-element", TRUE ~ TE)) %>% inner_join(metadata, by="Sample"))
+(final_dataset <- left_join(invaders, oldness, by=c("Sample","TE")) %>% mutate(reinvasion = ifelse(TE %in% c("PPI251","Opus"), FALSE, TRUE), TE=case_when(TE=="DMIFACA"~"I-element", TE=="PPI251" ~ "P-element", TRUE ~ TE)) %>% inner_join(metadata, by="Sample") %>% filter(TE!="Shellder"))
 
 write_tsv(final_dataset, "/Volumes/Storage/dmel-full-story/dataset.tsv")
-```
-
-```{r}
-#(te412_diagnostic <- find_diagnostic("SRR23876563", "SRR8494428", te412, "/Volumes/Storage/dmel-full-story/diagnostic_snps/412.png"))
-#(opus_diagnostic <- find_diagnostic("SRR23876563", "SRR8494428", opus, "/Volumes/Storage/dmel-full-story/diagnostic_snps/opus.png"))
-
-
 ```

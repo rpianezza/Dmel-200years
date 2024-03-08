@@ -1,0 +1,112 @@
+---
+title: "Drosophila melanogaster - TE invasions maps"
+output: rmarkdown::github_document
+editor_options: 
+  markdown: 
+    wrap: sentence
+    author: Riccardo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(knitr))
+suppressPackageStartupMessages(library(kableExtra))
+suppressPackageStartupMessages(library(ggpubr))
+suppressPackageStartupMessages(library(svglite))
+theme_set(theme_bw())
+```
+
+## File import
+
+Read metadata and copynumber estimates
+```{r}
+invaders <- read_tsv("/Volumes/Storage/dmel-full-story/dataset.tsv", show_col_types = FALSE) %>% mutate(presence = ifelse(HQ_reads>=2.5, "present", "absent"))
+
+HT_estimates <- tibble(
+  TE = c("Blood", "Opus", "412", "Tirant", "I-element", "Hobo", "P-element", "Spoink", "Micropia", "Souslik", "Transib1"),
+  HT = c(1900, 1900, 1900, 1935, 1950, 1960, 1965, 1985, 1985, 2005, 2010))
+
+(invaders_meta <- inner_join(invaders, HT_estimates, by="TE") %>% mutate(new_alleles = ifelse(reinvasion==TRUE, new_alleles, ifelse(HQ_reads > 1, 1, 0))))
+  
+invaders_meta$TE <- factor(invaders_meta$TE, levels = c("Blood", "Opus", "412", "Tirant", "I-element", "Hobo", "P-element", "Spoink", "Micropia", "Souslik", "Transib1"))
+```
+
+## Maps
+
+```{r}
+world_map <- map_data("world") %>% filter(region != "Antarctica")
+naeu_map <- world_map %>% filter(lat > 25 & lat < 70, long > -135 & long < 45)
+europe_map <- world_map %>% filter(lat > 36 & lat < 70, long > -10 & long < 40)
+```
+
+## Transib
+
+```{r}
+transib_data <- invaders_meta %>% filter(TE=="Transib1") %>% mutate(year = ifelse(year>2013, year, "<2013"))
+```
+
+World map
+```{r}
+(transib_map_world <- ggplot() +
+    geom_map(data = world_map, map = world_map, aes(long, lat, map_id = region), color = "white", fill = "cornsilk3", linewidth = 0) +
+    geom_point(data = transib_data, aes(x = lon, y = lat, color = new_alleles), size = 4, position = position_jitter(width = 2, height = 2), alpha = 0.25) +
+    scale_color_gradientn(colours=c("darkgreen","red","darkred"))+
+    theme(plot.title = element_text(hjust = 0.5), axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
+    facet_wrap(~year) +
+    labs(color="new alleles frequency") +
+    ggtitle("Transib1"))
+```
+
+NA+EU maps
+```{r}
+transib_naeu <- transib_data %>% filter(lat > 25 & lat < 70, lon > -135 & lon < 45)
+
+(transib_map_snps <- ggplot() +
+    geom_map(data = naeu_map, map = naeu_map,
+             aes(long, lat, map_id = region),
+             color = "white", fill = "cornsilk3", linewidth = 0) +
+   geom_point(data = transib_naeu, aes(x = lon, y = lat, color = new_alleles), size = 4, position = position_jitter(width = 1, height = 1), alpha = 0.25) +
+   scale_color_gradientn(colours=c("darkgreen","red","darkred"), breaks = c(0,0.2,0.4,0.6,0.8,1))+
+  theme(plot.title = element_text(hjust = 0.5), axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
+  facet_wrap(~year) +
+    labs(color="new alleles frequency") +
+    ggtitle("Transib1"))
+```
+
+EU map
+```{r}
+transib_eu <- transib_data %>% filter(lat > 36 & lat < 70, lon > -10 & lon < 40)
+
+(transib_map_eu <- ggplot() +
+    geom_map(data = europe_map, map = europe_map,
+             aes(long, lat, map_id = region),
+             color = "white", fill = "cornsilk3", linewidth = 0) +
+   geom_point(data = transib_eu, aes(x = lon, y = lat, color = new_alleles), size = 4, position = position_jitter(width = 1, height = 1), alpha = 0.25) +
+   scale_color_gradientn(colours=c("darkgreen","red","darkred"), breaks = c(0,0.2,0.4,0.6,0.8,1))+
+  theme(plot.title = element_text(hjust = 0.5), axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
+  facet_wrap(~year) +
+    labs(color="new alleles frequency") +
+    ggtitle("Transib1"))
+```
+
+## Souslik
+
+```{r}
+souslik_data <- invaders_meta %>% filter(TE=="Souslik") %>% mutate(year = as.character(year), year = case_when(year < 2009 ~ "<2009", year %in% c("2009","2010") ~ "2009-2010", year %in% c("2011","2012","2013","2014") ~ "2011-2014", year %in% c("2015","2016") ~ "2015-2016"))
+```
+
+World map
+```{r}
+(souslik_map_world <- ggplot() +
+    geom_map(data = world_map, map = world_map, aes(long, lat, map_id = region), color = "white", fill = "cornsilk3", linewidth = 0) +
+    geom_point(data = souslik_data, aes(x = lon, y = lat, color = new_alleles), size = 4, position = position_jitter(width = 2, height = 2), alpha = 0.25) +
+    scale_color_gradientn(colours=c("darkgreen","red","darkred"))+
+    theme(plot.title = element_text(hjust = 0.5), axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
+    facet_wrap(~year) +
+    labs(color="new alleles frequency") +
+    ggtitle("Souslik"))
+```
