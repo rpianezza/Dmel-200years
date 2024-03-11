@@ -1,0 +1,5 @@
+muscle -align file.fasta -output file.MSA
+seqret -auto -sequence file.MSA -outseq file.nexus -osformat nexus
+PASS TO LOCAL PC AND USE BEAUTI TO GENERATE XML FILE FROM NEXUS, THEN PASS XML BACK --> THIS MUST BE AUTOMATED SOMEHOW!
+programs/beast/bin/beast -threads 40 file.xml
+programs/beast/bin/treeannotator -burnin 10 -height mean input.trees output.tree
