@@ -37,6 +37,10 @@ RM <- read_tsv("/Volumes/Storage/dmel-full-story/RepeatMasker/RM-longreads/merge
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
 ``` r
+write_tsv(RM, "/Volumes/Storage/GitHub/Dmel-200years/data/RM-readable.tsv")
+```
+
+``` r
 RM_full_len <- RM %>% filter(!(te %in% c("Hobo","PPI251","Transib_Riccardo"))) %>% select(strain, te, SW, pid, len, score, year) %>% filter(score > 0.8, pid < 1)
 RM_DNA_TE <- RM %>% filter(te %in% c("Hobo","Transib_Riccardo","PPI251")) %>% select(strain, te, SW, pid, len, score, year) %>% filter(score > 0.5, pid < 1)
 RM_P <- RM %>% filter(te == "PPI251") %>% select(strain, te, SW, pid, len, score, year) %>% filter(score > 0.25, pid < 1)
@@ -59,9 +63,9 @@ RM_plottable$te <- factor(RM_plottable$te, levels = c("Blood", "Opus", "412", "T
 
 insertions_plot <- ggplot(RM_plottable, aes(x=reorder(strain,year), y=insertions, fill=presence))+
   geom_bar(stat = "identity")+
-    labs(x="", y="copynumber")+
+    labs(x="", y="copynumber", fill="TE")+
     facet_wrap(~te, ncol=1)+
-scale_fill_manual(values = c("darkgreen", "red"))+
+scale_fill_manual(values = c("violet", "darkblue"))+
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=4), legend.position = "top", legend.key.size = unit(0.2, "cm"))
 
 ggsave("/Volumes/Storage/dmel-full-story/figures/LR-08.png", insertions_plot, height = 20)
@@ -71,38 +75,21 @@ ggsave("/Volumes/Storage/dmel-full-story/figures/LR-08.png", insertions_plot, he
 
 ``` r
 to_map <- RM_plottable %>% inner_join(dmel_lr_meta, by=c("strain","year")) %>% ungroup()
-to_map$presence <- factor(to_map$presence, levels = c("present", "absent"))
+to_map$presence <- factor(to_map$presence, levels = c("absent", "present"))
 
 world_map <- map_data("world")
 world_map <- subset(world_map, region != "Antarctica")
 
 tomap_sous <- to_map %>% filter(te == "Souslik") %>% mutate(year = ifelse(year > 2003, ">2003", "<2003"))
 tomap_tra <- to_map %>% filter(te == "Transib1") %>% mutate(year = ifelse(year > 2011, ">2011", "<2011"))
-(tomap_mic <- to_map %>% filter(te == "Micropia") %>% mutate(year = ifelse(year > 1995, ">1995", "<1995")))
-```
+tomap_mic <- to_map %>% filter(te == "Micropia") %>% mutate(year = ifelse(year > 1995, ">1995", "<1995"))
 
-    ## # A tibble: 47 × 8
-    ##    strain te       year  insertions presence continent   lat   lon
-    ##    <chr>  <fct>    <chr>      <dbl> <fct>    <chr>     <dbl> <dbl>
-    ##  1 AKA017 Micropia >1995          9 present  Europe       62    29
-    ##  2 AKA018 Micropia >1995         12 present  Europe       62    29
-    ##  3 COR014 Micropia >1995         12 present  Europe       38    -3
-    ##  4 COR018 Micropia >1995         13 present  Europe       38    -3
-    ##  5 COR023 Micropia >1995         10 present  Europe       38    -3
-    ##  6 COR025 Micropia >1995         12 present  Europe       38    -3
-    ##  7 GIM012 Micropia >1995          6 present  Europe       42     0
-    ##  8 GIM024 Micropia >1995         10 present  Europe       42     0
-    ##  9 JUT008 Micropia >1995          9 present  Europe       56     9
-    ## 10 JUT011 Micropia >1995         10 present  Europe       56     9
-    ## # ℹ 37 more rows
-
-``` r
 (lr_map_sous <- ggplot() +
     geom_map(data = world_map, map = world_map,
              aes(long, lat, map_id = region),
              color = "white", fill = "cornsilk3", linewidth = 0) +
    geom_point(data = tomap_sous, aes(x = lon, y = lat, color = presence), size = 4, position = position_jitter(width = 1, height = 1), alpha = 0.5)) +
-   scale_colour_manual(values = c("red", "darkgreen")) +
+   scale_colour_manual(values = c("violet", "darkblue")) +
   theme(axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
   facet_wrap(~year)+
   labs(color = "Souslik")
@@ -121,7 +108,7 @@ tomap_tra <- to_map %>% filter(te == "Transib1") %>% mutate(year = ifelse(year >
              aes(long, lat, map_id = region),
              color = "white", fill = "cornsilk3", linewidth = 0) +
    geom_point(data = tomap_tra, aes(x = lon, y = lat, color = presence), size = 4, position = position_jitter(width = 1, height = 1), alpha = 0.5)) +
-   scale_colour_manual(values = c("red", "darkgreen")) +
+   scale_colour_manual(values = c("violet", "darkblue")) +
   theme(axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
   facet_wrap(~year)+
   labs(color = "Transib")
@@ -138,7 +125,7 @@ tomap_tra <- to_map %>% filter(te == "Transib1") %>% mutate(year = ifelse(year >
              aes(long, lat, map_id = region),
              color = "white", fill = "cornsilk3", linewidth = 0) +
    geom_point(data = tomap_mic, aes(x = lon, y = lat, color = presence), size = 4, position = position_jitter(width = 1, height = 1), alpha = 0.5)) +
-   scale_colour_manual(values = c("red", "darkgreen")) +
+   scale_colour_manual(values = c("violet", "darkblue")) +
   theme(axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
   facet_wrap(~year)+
   labs(color = "Micropia")
