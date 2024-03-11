@@ -24,7 +24,7 @@ theme_set(theme_bw())
 
 Read metadata and copynumber estimates
 ```{r}
-invaders <- read_tsv("/Volumes/Storage/dmel-full-story/dataset.tsv", show_col_types = FALSE) %>% mutate(presence = ifelse(HQ_reads>=2.5, "present", "absent"))
+invaders <- read_tsv("/Volumes/Storage/dmel-full-story/dataset.tsv", show_col_types = FALSE) %>% mutate(presence = ifelse(HQ_reads>=2.5, "present", "absent")) %>% filter(!(Sample %in% c("SRR8061818", "SRR8061819")))
 
 HT_estimates <- tibble(
   TE = c("Blood", "Opus", "412", "Tirant", "I-element", "Hobo", "P-element", "Spoink", "Micropia", "Souslik", "Transib1"),

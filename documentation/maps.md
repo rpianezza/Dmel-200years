@@ -15,7 +15,7 @@ theme_set(theme_bw())
 Read metadata and copynumber estimates
 
 ``` r
-invaders <- read_tsv("/Volumes/Storage/dmel-full-story/dataset.tsv", show_col_types = FALSE) %>% mutate(presence = ifelse(HQ_reads>=2.5, "present", "absent"))
+invaders <- read_tsv("/Volumes/Storage/dmel-full-story/dataset.tsv", show_col_types = FALSE) %>% mutate(presence = ifelse(HQ_reads>=2.5, "present", "absent")) %>% filter(!(Sample %in% c("SRR8061818", "SRR8061819")))
 
 HT_estimates <- tibble(
   TE = c("Blood", "Opus", "412", "Tirant", "I-element", "Hobo", "P-element", "Spoink", "Micropia", "Souslik", "Transib1"),
@@ -24,7 +24,7 @@ HT_estimates <- tibble(
 (invaders_meta <- inner_join(invaders, HT_estimates, by="TE") %>% mutate(new_alleles = ifelse(reinvasion==TRUE, new_alleles, ifelse(HQ_reads > 1, 1, 0))))
 ```
 
-    ## # A tibble: 6,413 × 16
+    ## # A tibble: 6,391 × 16
     ##    Sample     TE    All_reads HQ_reads new_alleles reinvasion strain publication
     ##    <chr>      <chr>     <dbl>    <dbl>       <dbl> <lgl>      <chr>  <chr>      
     ##  1 ERR6474638 412       52.3     42.6     0.956    TRUE       Orego… https://do…
@@ -37,7 +37,7 @@ HT_estimates <- tibble(
     ##  8 ERR6474638 Sous…      3.15     2.1     0.00231  TRUE       Orego… https://do…
     ##  9 ERR6474638 Spoi…      0.83     0.1     0.000187 TRUE       Orego… https://do…
     ## 10 ERR6474638 Tira…      0.48     0.08    0.00107  TRUE       Orego… https://do…
-    ## # ℹ 6,403 more rows
+    ## # ℹ 6,381 more rows
     ## # ℹ 8 more variables: study <chr>, study_id <chr>, year <dbl>, location <chr>,
     ## #   lat <dbl>, lon <dbl>, presence <chr>, HT <dbl>
 
@@ -56,7 +56,8 @@ europe_map <- world_map %>% filter(lat > 36 & lat < 70, long > -10 & long < 40)
 ## Transib
 
 ``` r
-transib_data <- invaders_meta %>% filter(TE=="Transib1") %>% mutate(year = ifelse(year>2013, year, "<2013"))
+transib_data <- invaders_meta %>% filter(TE=="Transib1") %>% mutate(year = ifelse(year>2013, year, "Before 2013"))
+transib_data$year <- factor(transib_data$year, levels = c("Before 2013", "2014", "2015", "2016"))
 ```
 
 World map
@@ -83,6 +84,7 @@ NA+EU maps
 
 ``` r
 transib_naeu <- transib_data %>% filter(lat > 25 & lat < 70, lon > -135 & lon < 45)
+transib_naeu$year <- factor(transib_naeu$year, levels = c("Before 2013", "2014", "2015", "2016"))
 
 (transib_map_snps <- ggplot() +
     geom_map(data = naeu_map, map = naeu_map,
@@ -126,7 +128,8 @@ transib_eu <- transib_data %>% filter(lat > 36 & lat < 70, lon > -10 & lon < 40)
 ## Souslik
 
 ``` r
-souslik_data <- invaders_meta %>% filter(TE=="Souslik") %>% mutate(year = as.character(year), year = case_when(year < 2009 ~ "<2009", year %in% c("2009","2010") ~ "2009-2010", year %in% c("2011","2012","2013","2014") ~ "2011-2014", year %in% c("2015","2016") ~ "2015-2016"))
+souslik_data <- invaders_meta %>% filter(TE=="Souslik") %>% mutate(year = as.character(year), year = case_when(year < 2009 ~ "Before 2009", year %in% c("2009","2010") ~ "2009-2010", year %in% c("2011","2012","2013","2014") ~ "2011-2014", year %in% c("2015","2016") ~ "2015-2016"))
+souslik_data$year <- factor(souslik_data$year, levels = c("Before 2009", "2009-2010", "2011-2014", "2015-2016"))
 ```
 
 World map
@@ -148,3 +151,31 @@ World map
     ## Warning: Removed 2 rows containing missing values (`geom_point()`).
 
 ![](maps_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+
+## Micropia
+
+``` r
+micropia_data <- invaders_meta %>% filter(TE=="Micropia") %>% mutate(year = case_when(year < 1993 ~ "Before 1993", year %in% c("1993","1995") ~ "1993-1995", year %in% c("2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996") ~ "1996-2006", TRUE ~ "After 2006"))
+
+micropia_data$year <- factor(micropia_data$year, levels = c("Before 1993", "1993-1995", "1996-2006", "After 2006"))
+```
+
+World map
+
+``` r
+(micropia_map_world <- ggplot() +
+    geom_map(data = world_map, map = world_map, aes(long, lat, map_id = region), color = "white", fill = "cornsilk3", linewidth = 0) +
+    geom_point(data = micropia_data, aes(x = lon, y = lat, color = new_alleles), size = 4, position = position_jitter(width = 3, height = 3), alpha = 0.25) +
+    scale_color_gradientn(colours=c("darkgreen","red","darkred"))+
+    theme(plot.title = element_text(hjust = 0.5), axis.text = element_blank(), axis.title = element_blank(), axis.ticks = element_blank(), legend.position = "bottom") +
+    facet_wrap(~year) +
+    labs(color="new alleles frequency") +
+    ggtitle("Micropia"))
+```
+
+    ## Warning in geom_map(data = world_map, map = world_map, aes(long, lat, map_id =
+    ## region), : Ignoring unknown aesthetics: x and y
+
+    ## Warning: Removed 2 rows containing missing values (`geom_point()`).
+
+![](maps_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
