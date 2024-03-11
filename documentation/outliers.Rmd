@@ -1,0 +1,118 @@
+---
+title: "Drosophila melanogaster - TE invasions timing - outliers"
+output: rmarkdown::github_document
+editor_options: 
+  markdown: 
+    wrap: sentence
+    author: Riccardo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(knitr))
+suppressPackageStartupMessages(library(kableExtra))
+suppressPackageStartupMessages(library(ggpubr))
+suppressPackageStartupMessages(library(svglite))
+theme_set(theme_bw())
+```
+
+## File import
+
+Read metadata and copynumber estimates
+```{r}
+(invaders <- read_tsv("/Volumes/Storage/dmel-full-story/dataset.tsv", show_col_types = FALSE) %>% mutate(presence = ifelse(HQ_reads>=2.5, "present", "absent")))
+
+HT_estimates <- tibble(
+  TE = c("Blood", "Opus", "412", "Tirant", "I-element", "Hobo", "P-element", "Spoink", "Micropia", "Souslik", "Transib1"),
+  HT = c(1900, 1900, 1900, 1935, 1950, 1960, 1965, 1985, 1985, 2005, 2010))
+
+invaders_meta <- inner_join(invaders, HT_estimates, by="TE")
+  
+invaders_meta$TE <- factor(invaders_meta$TE, levels = c("Blood", "Opus", "412", "Tirant", "I-element", "Hobo", "P-element", "Spoink", "Micropia", "Souslik", "Transib1"))
+```
+
+## Outliers extraction
+
+Looking at the diagnostic SNPs plots and the timelines, I noticed some outliers, which I identify here:
+
+* 2 USA outliers (2014): SRR8061818 and SRR8061819 --> none of the 11 TEs is present apart from Souslik and Hobo (low copy)
+* 2 AFR outliers (2008): SRR189073 and SRR189075 --> low Tirant, P-element. SRR189073 lacks Spoink
+
+```{r}
+outliers_detection_snps <- invaders_meta %>% filter(reinvasion==TRUE, new_alleles<0.3, year>1960, TE!="Transib1", TE!="Souslik") %>% arrange(year)
+
+outliers_detection_cn <- invaders_meta %>% filter(reinvasion==FALSE, HQ_reads<2.5, year>1995, TE!="Transib1", TE!="Souslik") %>% arrange(year)
+
+(outliers <- invaders_meta %>% filter(Sample %in% c("SRR23876563", "SRR8494428", "SRR189075", "SRR189073", "SRR8061818", "SRR8061819")) %>% mutate(nreads = case_when(Sample=="SRR23876563"~13661554, Sample=="SRR8494428"~16219790, Sample=="SRR189075"~12390769, Sample=="SRR189073"~920457, Sample=="SRR8061818"~13045677, Sample=="SRR8061819"~9486676)))
+outliers$Sample <- factor(outliers$Sample, levels = c("SRR23876563", "SRR8494428", "SRR189075", "SRR189073", "SRR8061818", "SRR8061819"))
+
+(outliers_p <- ggplot(outliers, aes(x=TE, y=HQ_reads, fill=new_alleles))+
+  geom_bar(stat="identity")+
+    scale_fill_gradient(low="darkgreen", high = "red")+
+  facet_wrap(~Sample, ncol = 1)+
+    labs(x="", y="copynumber", fill = "new alleles frequency")+
+    theme(legend.position = "top"))
+
+#ggsave("/Volumes/Storage/dmel-full-story/figures/outliers.png", plot = outliers_p, height = 12)
+```
+
+```{r}
+outliers_bergman <- read_csv("/Volumes/Storage/dmel-full-story/analysis/outliers/outliers-dmelTEs.csv") %>% filter(Sample!="Sample") %>% type_convert()
+outliers_bergman$Sample <- factor(outliers_bergman$Sample, levels = c("SRR23876563", "SRR8494428", "SRR189075", "SRR189073", "SRR8061818", "SRR8061819"))
+
+outliers_positive_control <- outliers_bergman %>% filter(Sample=="SRR8494428") %>% mutate(positive_control = HQ_reads) %>% select(TE, positive_control) %>% filter(positive_control>1)
+
+fold_enrichment <- outliers_bergman %>% inner_join(outliers_positive_control, by="TE") %>% mutate(fold_change = log2(positive_control/HQ_reads), status = ifelse(fold_change >= 3, "changed", "unchanged"))
+
+changes <- fold_enrichment %>% filter(status=="changed")
+
+plot_outliers_fold <- ggplot(fold_enrichment, aes(x=TE, y=fold_change, fill=status))+
+  geom_bar(stat="identity")+
+  facet_wrap(~Sample, ncol = 1)+
+  theme(legend.position = "top", 
+        axis.text.x = element_text(angle = 90, hjust = 1, size = 3))
+```
+
+### American outliers
+
+They have a number of reads and file dimensions (fastq) comparable to all the others. They do not harbour great levels of *D. simulans* contamination (stated in the metadata of this paper: https://academic.oup.com/mbe/article/38/12/5782/6361628)
+
+```{r}
+fold_enrichment_USA <- fold_enrichment %>% filter(Sample %in% c("SRR8061818", "SRR8061819"))
+
+(plot_outliers_fold <- ggplot(fold_enrichment_USA, aes(x=TE, y=fold_change))+
+  geom_bar(stat="identity")+
+  facet_wrap(~Sample, ncol = 1)+
+  labs(title = "Log2(fold change) compared to SRR8494428")+
+  theme(legend.position = "top", 
+        axis.text.x = element_text(angle = 90, hjust = 1, size = 3)))
+
+USA_corr <- fold_enrichment_USA %>% select(-status, -All_reads, -HQ_reads) %>% pivot_wider(names_from = Sample, values_from = fold_change)
+
+USA_corr_plot <- ggplot(USA_corr, aes(x=SRR8061818, y=SRR8061819))+
+  geom_point()+
+  labs(title = "Fold change compared to SRR8494428 correlation")+
+  theme(legend.position = "top")
+
+USA_corr_cn <- fold_enrichment_USA %>% select(-status, -All_reads, -fold_change) %>% pivot_wider(names_from = Sample, values_from = HQ_reads)
+
+(USA_corr_cn_plot <- ggplot(USA_corr_cn, aes(x=SRR8061818, y=SRR8061819))+
+  geom_point()+
+  labs(title = "Copynumbers correlation")+
+  theme(legend.position = "top"))
+```
+
+```{r}
+fold_enrichment_AFR <- fold_enrichment %>% filter(Sample %in% c("SRR189075", "SRR189073"))
+
+(plot_outliers_fold <- ggplot(fold_enrichment_AFR, aes(x=TE, y=fold_change))+
+  geom_bar(stat="identity")+
+  facet_wrap(~Sample, ncol = 1)+
+  labs(title = "Log2(fold change) compared to SRR8494428")+
+  theme(legend.position = "top", 
+        axis.text.x = element_text(angle = 90, hjust = 1, size = 3)))
+```
