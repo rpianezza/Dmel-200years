@@ -52,7 +52,7 @@ combinations <- expand.grid(strain = strains$strain, te = te$te)
 repeated_combinations <- combinations[rep(1:nrow(combinations), each = 11), ]
 dummy <- as_tibble(repeated_combinations) %>% distinct() %>% inner_join(strains, by="strain")
 
-RM_plottable <- RM_count %>% group_by(strain, te, year) %>% summarise(insertions = n()) %>% right_join(dummy, by=c("strain","te","year")) %>% mutate(insertions = ifelse(is.na(insertions), -1, insertions)) %>% mutate(presence = ifelse(insertions>1, "present", "absent"), year = ifelse(is.na(year), 1975, year), te=ifelse(te=="Transib_Riccardo","Transib1",te))
+RM_plottable <- RM_count %>% group_by(strain, te, year) %>% summarise(insertions = n()) %>% right_join(dummy, by=c("strain","te","year")) %>% mutate(insertions = ifelse(is.na(insertions), -1, insertions)) %>% mutate(presence = ifelse(insertions>1, "present", "absent"), year = ifelse(is.na(year), 1975, year), te=ifelse(te=="Transib_Riccardo","Transib1",te)) %>% mutate(name_year = paste0(strain, " (", year, ")"))
 ```
 
     ## `summarise()` has grouped output by 'strain', 'te'. You can override using the
@@ -61,17 +61,22 @@ RM_plottable <- RM_count %>% group_by(strain, te, year) %>% summarise(insertions
 ``` r
 RM_plottable$te <- factor(RM_plottable$te, levels = c("Blood", "Opus", "412", "Tirant", "DMIFACA", "Hobo", "PPI251", "Spoink", "Micropia", "Souslik", "Transib1"))
 
-insertions_plot <- ggplot(RM_plottable, aes(x=reorder(strain,year), y=insertions, fill=presence))+
+(insertions_plot <- ggplot(RM_plottable, aes(x=reorder(strain,year), y=insertions, fill=presence))+
   geom_bar(stat = "identity")+
     labs(x="", y="copynumber", fill="TE")+
-    facet_wrap(~te, ncol=1)+
+    scale_x_discrete(breaks = RM_plottable$strain, labels = RM_plottable$name_year)+
+    facet_grid(te ~ .)+
 scale_fill_manual(values = c("violet", "darkblue"))+
-    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=4), legend.position = "top", legend.key.size = unit(0.2, "cm"))
-
-ggsave("/Volumes/Storage/dmel-full-story/figures/LR-08.png", insertions_plot, height = 20)
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size=7), legend.position = "bottom", legend.key.size = unit(0.2, "cm")))
 ```
 
-    ## Saving 7 x 20 in image
+![](RepeatMasker-dmelLR_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+``` r
+ggsave("/Volumes/Storage/dmel-full-story/figures/Fig1/LR-08.svg", insertions_plot, height = 10, dpi = 600)
+```
+
+    ## Saving 7 x 10 in image
 
 ``` r
 to_map <- RM_plottable %>% inner_join(dmel_lr_meta, by=c("strain","year")) %>% ungroup()
