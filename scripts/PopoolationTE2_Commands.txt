@@ -1,0 +1,9 @@
+Trim to 75 nt
+bwa bwasw -t 16 Dmel_TE_merged.fa pool/SRR8494428_1.fastq.gz > /Volumes/Element/Backup/Two_centuries_dmel/PopTE2/map/Pool_1.sam
+bwa bwasw -t 16 Dmel_TE_merged.fa pool/SRR8494428_2.fastq.gz > /Volumes/Element/Backup/Two_centuries_dmel/PopTE2/map/Pool_2.sam
+java -jar /Volumes/Element/popte2-v1.10.03.jar se2pe --fastq1 ../reads_fastq/trimmed/SRR8494428_1.fastq_clean.gz --fastq2 ../reads_fastq/trimmed/SRR8494428_2.fastq_clean.gz --bam1 ../map_trimmed/SRR8494428_1.sam --bam2 ../map_trimmed/SRR8494428_2.sam --sort --output ../map_trimmed/Pool.sort.bam
+java -jar /Volumes/Element/popte2-v1.10.03.jar ppileup --bam Pool.sort.bam --map-qual 15 --hier /Volumes/Element/Backup/Two_centuries_dmel/PopTE2/names_TEs.hier --output Pool_trimmed.ppileup.gz
+java -jar /Volumes/Element/popte2-v1.10.03.jar identifySignatures --ppileup Pool_trimmed.ppileup.gz --mode separate --output Pool_trimmed_count2.signatures --min-count 2
+java -jar /Volumes/Element/popte2-v1.10.03.jar frequency --ppileup Pool_trimmed.ppileup.gz --signature Pool_trimmed_count2.signatures --output Pool_trimmed_count2.freqsig
+Change commas with dots if computer in german
+java -Duser.country=US -Duser.language=en -jar /Volumes/Element/popte2-v1.10.03.jar pairupSignatures --signature Pool_trimmed_filter44.freqsig --ref-genome /Users/ascarpa/Downloads/dmel_twocenturies_local/Supp_fig/PopTE2/Dmel_TE_merged.fa --hier /Volumes/Element/Backup/Two_centuries_dmel/PopTE2/names_TEs.hier --min-distance -200 --max-distance 300 --output Pool_trimmed_filter44.teinsertions
